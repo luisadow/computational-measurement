@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AI assistant local/session data — never commit this
+# (project-level Claude Code settings, permissions, local state, etc.)
+.claude/
+.cursor/
+.codex/
+.gemini/
+CLAUDE.local.md
+
+# macOS
+.DS_Store
