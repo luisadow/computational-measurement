@@ -4,10 +4,22 @@ Physics-informed machine learning for low-cost and
 
 sparse physical measurement systems.
 
-> This repository is currently in the exploration stage.
 
-> The project investigates how physical models and machine
+## Current Status
 
-> learning can be combined to reconstruct physical quantities
+__Exploration / Learning Stage__
 
-> from sparse and noisy measurements.
+Currently focusing on:
+- Neural Networks
+- PyTorch / JAX
+- Automatic Differentiation
+- Dynamical Systems
+- Inverse Problems
+- Physics-informed Machine Learning
+
+
+## Long-term Goal
+
+Investigate whether physics-informed computational methods
+can reduce the hardware requirements of physical measurement
+systems while maintaining useful measurement accuracy.
