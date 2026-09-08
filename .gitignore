@@ -228,3 +228,11 @@ CLAUDE.local.md
 
 # macOS
 .DS_Store
+
+# Literatur / Lehrbuch-PDFs — nur lokal, nicht ins Repo.
+# mml-book.pdf ist urheberrechtlich geschuetzt: "free to view and download for
+# personal use only. Not for re-distribution" (Cambridge University Press).
+# Frei beziehbar ueber https://mml-book.com/
+mml-book.pdf
+literature/
+*.epub
