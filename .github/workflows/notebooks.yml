@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -34,3 +34,11 @@ jobs:
             jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=600 --output-dir /tmp/executed "$nb"
             echo "::endgroup::"
           done
+
+      - name: Upload executed notebooks
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: executed-notebooks
+          path: /tmp/executed/
+          retention-days: 14
