@@ -1,5 +1,8 @@
 # Computational Measurement
 
+[![notebooks](https://github.com/luisadow/computational-measurement/actions/workflows/notebooks.yml/badge.svg)](https://github.com/luisadow/computational-measurement/actions/workflows/notebooks.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **Physics-informed machine learning for low-cost, sparse physical measurement systems.**
 
 Can computation replace measurement hardware? This project investigates whether physics-informed inverse models can recover useful physical quantities from fewer, cheaper, or noisier sensors — with computational spectroscopy as the main application and an ESP32-S3 as the eventual deployment target.
