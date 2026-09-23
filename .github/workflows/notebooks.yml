@@ -1,0 +1,36 @@
+name: notebooks
+
+# Execute every notebook top to bottom, so the repository never contains
+# a notebook that only works with hidden kernel state.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: exploration/requirements.txt
+
+      - name: Install dependencies (CPU-only PyTorch)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r exploration/requirements.txt
+
+      - name: Execute notebooks
+        run: |
+          for nb in exploration/*/*.ipynb; do
+            echo "::group::$nb"
+            jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=600 --output-dir /tmp/executed "$nb"
+            echo "::endgroup::"
+          done

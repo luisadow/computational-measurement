@@ -1,14 +1,12 @@
 # Project Brief: Physics-Informed Computational Measurement
 
-Detailed research background and long-term vision for this project.
+Research background, planned experiments and long-term vision for this project.
 
 ## 1. Background
 
-Physics student at TU Berlin (8th semester). Academic interests: experimental/applied physics, optics and quantum systems, electrodynamics, physical measurement systems, machine learning / physics-informed ML.
+I am a physics student at TU Berlin with interests in experimental/applied physics, optics and quantum systems, electrodynamics, physical measurement systems and physics-informed machine learning.
 
-Practical background: ~1 year of hardware development (STM32 firmware, embedded systems, electronics, drone systems, sensor systems), plus prior work with genetic algorithms for physics-related optimization.
-
-New to: neural networks, deep learning, PyTorch, JAX, physics-informed ML, PINNs, scientific ML in general. Learning approach is learning-by-doing — implement first, pull in theory when the next practical step requires it, and understand what the code is actually doing rather than treating it as a black box.
+My practical background is about one year of hardware development (STM32 firmware, embedded systems, electronics, drone and sensor systems) and earlier work with genetic algorithms for physics-related optimization problems. This project connects that measurement-hardware side with scientific machine learning, which I am learning from the ground up: implement first, pull in theory when the next practical step requires it, and understand what the code actually does instead of treating models as black boxes.
 
 ## 2. Long-term research vision
 
@@ -127,7 +125,7 @@ Realistic structure: physical measurement problem → forward model → experime
 
 ## 13. Transition: Exploration → Research
 
-The Exploration Stage ends when the user has enough intuition to:
+The Exploration Stage ends once I can:
 
 - explain what a neural network is
 - explain backpropagation at a conceptual level
@@ -138,4 +136,4 @@ The Exploration Stage ends when the user has enough intuition to:
 - build a simple PINN
 - understand basic limitations of PINNs
 
-At that point (explicit, user-driven — not automatic), set up the actual research project structure: reproducible experiments, scientific documentation, experiment logs, literature references, and `docs/ai_usage.md`.
+At that point the actual research project gets its own structure: reproducible experiments, scientific documentation, experiment logs, literature references, and a log of the tools used (including AI assistance), as required by the thesis guidelines.
